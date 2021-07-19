@@ -3,7 +3,7 @@ import shutil
 #Import path module from os
 from os import path
 #Path to working libffmpeg.so
-source_path_fix = "~/Downloads/0.52.2-linux-x64/libffmpeg.so"
+source_path_fix = "/home/calixte/Downloads/0.52.2-linux-x64/libffmpeg.so"
 source_path_original = "/usr/lib/x86_64-linux-gnu/opera/libffmpeg.so"
 #Checks if the source path is available
 if path.exists(source_path_fix):
