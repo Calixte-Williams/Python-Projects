@@ -4,13 +4,13 @@ import shutil
 #Import path module from os
 from os import path
 #Path to working libffmpeg.so
-source_path_fix = "/home/calixte/Downloads/Opera-Assets/libffmpeg.so"
-#file = os.path.expanduser("~/Downloads/Opera-Assets/libffmpeg.so")
+#source_path_fix = "/home/calixte/Downloads/Opera-Assets/libffmpeg.so"
+file = os.path.expanduser("~/Downloads/Opera-Assets/libffmpeg.so")
 #Path to original libffmpeg.so in Opera
 source_path_original = "/usr/lib/x86_64-linux-gnu/opera/libffmpeg.so"
 #Checks if the source path is available
 
-if path.exists(source_path_fix):
+if os.path.exists(file):
 #if os.path.exists(file):
     #Path to backup and rename the original libffmpeg.so in Opera
     destination_path_backup = "/usr/lib/x86_64-linux-gnu/opera/libffmpeg.so.bak"
@@ -19,7 +19,7 @@ if path.exists(source_path_fix):
     #Backup Original file to the same location
     backup_original = shutil.move(source_path_original, destination_path_backup)
     #Copy fix to Opera
-    fix = shutil.copy(source_path_fix, destination_path)
+    fix = shutil.copy(file, destination_path)
     #Print the message if operation successful
     print(f"Opera Video Playback has been fixed. Moved fix to location: {destination_path}")
 else:
