@@ -23,4 +23,4 @@ if os.path.exists(file):
     print(f"Opera Video Playback has been fixed. Moved fix to location: {destination_path}")
 else:
     #Print the message if the file does not exist
-    print("Could not locate file. Operation Terminated.")
+    print("Could not locate '~/Downloads/Opera-Assets/libffmpeg.so'. Operation Terminated.")
