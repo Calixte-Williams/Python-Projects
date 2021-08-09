@@ -11,7 +11,6 @@ source_path_original = "/usr/lib/x86_64-linux-gnu/opera/libffmpeg.so"
 #Checks if the source path is available
 
 if os.path.exists(file):
-#if os.path.exists(file):
     #Path to backup and rename the original libffmpeg.so in Opera
     destination_path_backup = "/usr/lib/x86_64-linux-gnu/opera/libffmpeg.so.bak"
     #Path to Opera Folder
