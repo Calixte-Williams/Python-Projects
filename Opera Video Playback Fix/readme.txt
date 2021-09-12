@@ -13,5 +13,9 @@ Requirements:
 
 Upcoming Developments:
  - Currently, does not find User Folder using "~", thus only works if the user is defined in Script
+ - Add feature to automaticallly download the fix file to a temporary folder and then clean up (delete) folder 
+   after patching Opera.
+ - Graphical Interface
+
  
 Feel free to join the effort and offer suggestions.
